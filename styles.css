@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  min-width: 300px;
+  background: linear-gradient(#77a 0%,
+  #446 3%,
+  #446 95%,
+  #77a 100%
+  );
+}
+header {
+  margin-top: 30px;
+}
+form {
+  min-width: 230px;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  background-color: #889;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+select,
+input,
+textarea {
+    border: 1px solid #333;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 100%;
+}
+.fs1 input:valid {
+  border-color: #0c0;
+  background-color: #bcb;
+}
+.fs1 input:invalid{
+  border-color: #c00;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active {
+  border-color: #00c;
+  background-color: #fff;
+  outline: none;
+}
+
+header h1, header p {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+main {
+  margin: 0 30px;
+}
+
+form p {
+  color: #000;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+fieldset {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 15px;
+  margin: 10px 0px;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  width: unset;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: unset;
+}
+input[type="submit"] {
+  display: block;
+  width: 100px;
+  min-width: 100px;
+  max-width: 300px;
+  margin: 20px auto;
+  box-shadow: 0 5px #333;
+  opacity: .8;
+}
+input[type="submit"]:hover {
+  background-color: #fff;
+  opacity: 1;
+  border-color: #00c;
+
+}
+input[type="submit"]:active {
+  margin-bottom: 15px;
+  margin-top: 25px;
+  box-shadow: 0 0 #333;
+}
+
+footer p {
+  text-align: center;
+  margin: 5px;
+  color: #104;
+  font-size: .85rem;
+  letter-spacing: .1rem;
+}
+
+
+@media (max-width: 768px){
+  :root {
+    font-size: 14px;
+    }
+
+  fieldset {
+    margin: 2px;
+    padding: 7px;
+  }
+}
+
+@media (max-width: 480px){
+  :root {
+    font-size: 11px;
+    }
+
+  input {
+    margin-bottom: 0px;
+  }
+}
