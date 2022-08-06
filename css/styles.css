@@ -260,6 +260,6 @@ footer p {
     width: 145px;
   }
   iframe {
-    transform: scale(.7);
+    transform: scale(.5);
   }
 }
