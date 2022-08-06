@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project Forms</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="image/logo.ico" type="image/icon">
+  </head>
+  <body>
+    <script>var submitted=false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='https://www.google.com/';}"></iframe>
+    <header>
+      <img id="logo" src="image/logo.png" alt="logo" />
+      <nav>
+        <ul>
+          <li><a id="home" href="" >Home</a></li>
+          <li><a href="result.html">Results</a></li>
+        </ul>
+      </nav>
+      <h1 id="title">Project Forms</h1>
+      <p id="description">This is a sample form using only html and css.</p>
+    </header>
+    <main>
+      <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeQacdu1i2YE7_U7zioLxZKdzWRvwBiIMeTNJoHSpE1VKy4VA/formResponse"
+            id="survey-form" method="post" target="hidden_iframe" onsubmit="submitted=true">
+        <fieldset>
+          <label for="name" id="name-label">First Name:</label>
+          <input name="entry.241487195" type="text" id="name" pattern="[a-z]{2,16}" placeholder="e.g. juan" required/>
+          <span></span>
+          <label for="email" id="email-label">Email:</label>
+          <input name="entry.880137084" type="email" id="email" placeholder="e.g. juandelacruz@sample.com" required/>
+          <span></span>
+          <label for="number" id="number-label">Age: </label>
+          <input name="entry.983316197" type="number" id="number" placeholder="e.g. 18-100" min="18" max="100" required/>
+          <span></span>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">Occupation:</label>
+          <select name="entry.1816252750" id="dropdown" required>
+            <option disabled selected value="">(select)</option>
+            <option value="The raw materials industry">The raw materials industry</option>
+            <option value="manufacturing and construction">manufacturing and construction</option>
+            <option value="The service industry">The service industry</option>
+            <option value="Information services">Information services</option>
+            <option value="Human services">Human services</option>
+            <option value="Unemployed">Unemployed</option>
+            <option value="Student">Student</option>
+            <option value="others">others</option>
+          </select>
+          <span></span>
+        </fieldset>
+        <fieldset>
+          <label>Gender:</label>
+          <label><input type="radio" name="entry.1037155781" value="Male" checked> Male</label>
+          <label><input type="radio" name="entry.1037155781" value="Female" > Female</label>
+          <label><input type="radio" name="entry.1037155781" value="Transgender"> Transgender</label>
+          <label><input type="radio" name="entry.1037155781" value="Non-binary/non-conforming"> Non-binary/non-conforming</label>
+          <label><input type="radio" name="entry.1037155781" value="Prefer not to respond"> Prefer not to respond</label>
+        </fieldset>
+        <fieldset>
+          <label><input type="checkbox" name="entry.375153027" value="Agree" required> I allow my data to be collected, processed and used.</label>
+          <label><input type="checkbox" name="entry.813289359" value="Agree" required> I certify that all the information above is correct.</label>
+        </fieldset>
+        <fieldset>
+          <label>Additional Comments: <textarea name="entry.44518862"></textarea></label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </main>
+    <footer>
+      <p>Author: Sean Eidref D. Natividad</p>
+    </footer>
+  </body>
+</html>
