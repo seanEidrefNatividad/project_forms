@@ -25,10 +25,10 @@ body {
   cursor: not-allowed;
   opacity: .5;
 }
-.info + .hidden-info {
+button.info + .hidden-info {
   position: relative;
 }
-.info {
+button.info {
   font-size: .75rem;
   background-color: #000;
   color: #ccc;
@@ -36,8 +36,8 @@ body {
   padding: .05rem .4rem .04rem;
   margin-left:.5rem;
 }
-.info:active + .hidden-info::after,
-.info:hover + .hidden-info::after {
+button.info:active + .hidden-info::after,
+button.info:hover + .hidden-info::after {
   content: "lowercase characters only";
   position: absolute;
   left: 15px;
