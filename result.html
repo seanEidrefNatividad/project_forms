@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +9,29 @@
   </head>
   <body>
     <header>
-      <img id="logo" src="image/logo.png" alt="logo" />
+      <img class="logo" src="image/logo.png" alt="logo" />
       <nav>
         <ul>
-          <li><a id="home" href="">Home</a></li>
+          <li><a class="home" href="">Home</a></li>
           <li><a href="project_forms.html">Project Forms</a></li>
         </ul>
       </nav>
-      <h1 id="title">Results</h1>
-      <p id="description">These are the results from Project Forms.</p>
+      <div class="header-container">
+        <h1 class="title">Results</h1>
+        <p class="description">Here are the results from Project Forms.</p>
+      </div>
     </header>
-    <main class="results-main">
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrJtJ0-_vHgp8o-ZseHHBHUGmz-ET6Mvf7-wlL8k2smpXoDbgdf8_soDGK2QdyJa96O8Bn28wNM_qg/pubchart?oid=892507129&amp;format=interactive"></iframe>
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrJtJ0-_vHgp8o-ZseHHBHUGmz-ET6Mvf7-wlL8k2smpXoDbgdf8_soDGK2QdyJa96O8Bn28wNM_qg/pubchart?oid=1131983107&amp;format=interactive"></iframe>
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrJtJ0-_vHgp8o-ZseHHBHUGmz-ET6Mvf7-wlL8k2smpXoDbgdf8_soDGK2QdyJa96O8Bn28wNM_qg/pubchart?oid=1345067523&amp;format=interactive"></iframe>
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrJtJ0-_vHgp8o-ZseHHBHUGmz-ET6Mvf7-wlL8k2smpXoDbgdf8_soDGK2QdyJa96O8Bn28wNM_qg/pubchart?oid=1931665870&amp;format=interactive"></iframe>
+    <main>
+      <div class="results-container">
+        <iframe class="results-iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrJtJ0-_vHgp8o-ZseHHBHUGmz-ET6Mvf7-wlL8k2smpXoDbgdf8_soDGK2QdyJa96O8Bn28wNM_qg/pubchart?oid=892507129&amp;format=interactive"></iframe>
+        <iframe class="results-iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrJtJ0-_vHgp8o-ZseHHBHUGmz-ET6Mvf7-wlL8k2smpXoDbgdf8_soDGK2QdyJa96O8Bn28wNM_qg/pubchart?oid=1131983107&amp;format=interactive"></iframe>
+        <iframe class="results-iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrJtJ0-_vHgp8o-ZseHHBHUGmz-ET6Mvf7-wlL8k2smpXoDbgdf8_soDGK2QdyJa96O8Bn28wNM_qg/pubchart?oid=1345067523&amp;format=interactive"></iframe>
+        <iframe class="results-iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrJtJ0-_vHgp8o-ZseHHBHUGmz-ET6Mvf7-wlL8k2smpXoDbgdf8_soDGK2QdyJa96O8Bn28wNM_qg/pubchart?oid=1931665870&amp;format=interactive"></iframe>
+        <img class="results-img" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrJtJ0-_vHgp8o-ZseHHBHUGmz-ET6Mvf7-wlL8k2smpXoDbgdf8_soDGK2QdyJa96O8Bn28wNM_qg/pubchart?oid=892507129&format=image" alt="Count of Names"/>
+        <img class="results-img" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrJtJ0-_vHgp8o-ZseHHBHUGmz-ET6Mvf7-wlL8k2smpXoDbgdf8_soDGK2QdyJa96O8Bn28wNM_qg/pubchart?oid=1345067523&format=image" alt="Count of Occupation">
+        <img class="results-img" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrJtJ0-_vHgp8o-ZseHHBHUGmz-ET6Mvf7-wlL8k2smpXoDbgdf8_soDGK2QdyJa96O8Bn28wNM_qg/pubchart?oid=1131983107&format=image" alt="Count of Age">
+        <img class="results-img" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQrJtJ0-_vHgp8o-ZseHHBHUGmz-ET6Mvf7-wlL8k2smpXoDbgdf8_soDGK2QdyJa96O8Bn28wNM_qg/pubchart?oid=1931665870&format=image" alt="Count of Gender">
+      </div>
     </main>
     <footer>
       <p>Author: Sean Eidref D. Natividad</p>
